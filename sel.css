@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #ccc;
+  text-align: center;
+}
+
+.profile-section {
+  padding: 50px 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #444;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+.social-icons a {
+  color: #ccc;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1da1f2;
+}
+
+.photo-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo {
+  background: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}
+
+.photo img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo p {
+  margin: 0;
+  padding: 10px;
+  background: #111;
+  color: #ddd;
+  font-size: 14px;}
+  .photo-layout .left .photo:nth-child(1) img { height: 400px; }
+.photo-layout .center .photo:nth-child(2) img { height: 220px; }
+.photo-layout .right .photo:nth-child(2) img { height: 400px; }
+
+@media (max-width: 900px) {
+  .photo-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+}
